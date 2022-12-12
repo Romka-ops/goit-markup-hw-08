@@ -1,0 +1,93 @@
+.filing {
+    display: block;
+    margin-top: 60px;
+
+    @include for-tablet {
+        text-align: center;
+        width: 100%;
+    }
+
+    @include for-desktop {
+        display: block;
+        margin-top: 0;
+        margin-left: 93px;
+        padding: 0;
+    }
+
+    &__item {
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &__input {
+        padding: 15px 16px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 50px;
+        border: none;
+        background-color: #2F303A;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 4px;
+        text-indent: 0;
+        color: rgba(255, 255, 255, 0.6);
+
+        @include for-tablet {
+            display: block;
+            margin: 0 auto;
+            width: 450px;
+        }
+
+        @include for-desktop {
+            width: 358px;
+        }
+
+
+    }
+
+    &__btn {
+
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+        padding: 10px 28px;
+        line-height: 1.9;
+        letter-spacing: 0.06em;
+        color: $body-color;
+        cursor: pointer;
+
+        background-color: $hover-color;
+        border: transparent;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+        @include for-tablet {
+            margin: 0;
+            margin-top: 20px;
+
+        }
+
+    }
+
+    &__text {
+
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: $body-color;
+    }
+
+    &__icon {
+        vertical-align: bottom;
+        margin-left: 10px;
+        fill: $body-color;
+        width: 24px;
+        height: 24px;
+    }
+}
